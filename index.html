@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureByte | Healthy Instant Fruit Juice Powder | Just Add Water</title>
+    <meta name="description"
+        content="Discover NatureByte's healthy instant juice powders in 12 delicious fruit flavours. 100% natural ingredients, no preservatives, no artificial colours. Just add water and stay refreshed.">
+    <meta name="keywords"
+        content="NatureByte, instant juice powder, healthy fruit juice, buy 2 get 2 free, summer combo, natural juice powder, health drink">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1.6">
+</head>
+
+<body>
+
+    <!-- ==================================================
+    TOP PROMOTIONAL BAR
+    ================================================== -->
+    <div class="promo-bar" id="promoBar">
+        <div class="promo-track">
+            <span class="promo-item">🚚 Free Shipping Above ₹499</span>
+            <span class="promo-item">🔥 Buy 2 Get 2 Free</span>
+            <span class="promo-item">🎁 Combo Pack Discounts Available</span>
+            <span class="promo-item">⚡ Limited Time Offer</span>
+            <!-- Duplicated for seamless scrolling -->
+            <span class="promo-item">🚚 Free Shipping Above ₹499</span>
+            <span class="promo-item">🔥 Buy 2 Get 2 Free</span>
+            <span class="promo-item">🎁 Combo Pack Discounts Available</span>
+            <span class="promo-item">⚡ Limited Time Offer</span>
+        </div>
+    </div>
+
+    <!-- ==================================================
+    HEADER
+    ================================================== -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#" class="logo" id="logoLink">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"
+                        fill="var(--primary-green)" />
+                    <path
+                        d="M12 3C7.03 3 3 7.03 3 12C3 13.92 3.6 15.7 4.63 17.17L17.17 4.63C15.7 3.6 13.92 3 12 3ZM19.37 6.83L6.83 19.37C8.3 20.4 10.08 21 12 21C16.97 21 21 16.97 21 12C21 10.08 20.4 8.3 19.37 6.83Z"
+                        fill="var(--primary-orange)" />
+                </svg>
+                <span class="logo-text">Nature<span class="logo-highlight">Byte</span></span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#combos" class="nav-link">Combo Packs</a>
+                <a href="#partner" class="nav-link">Become Partner</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="action-btn" id="wishlistBtn" aria-label="Wishlist">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <span class="badge" id="wishlistBadge">0</span>
+                </button>
+                <button class="action-btn" id="cartBtn" aria-label="Cart">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="badge" id="cartBadge">0</span>
+                </button>
+                <a href="#shop" class="btn btn-primary header-cta" id="headerCtaBtn">Buy Now</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ==================================================
+    HERO SLIDER
+    ================================================== -->
+    <section class="hero-banner-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="offer-tag">🌿 100% Natural • 0% Added Preservatives</span>
+                <h1 class="hero-title">Pure Fruit Goodness.<br>Just Add Water, <span class="text-gradient">Sip & Smile.</span></h1>
+                <p class="hero-subtitle">Experience the refreshing taste of 12 real fruit flavours packed with essential vitamins. Ready in 10 seconds, zero mess, and full of natural nutrients the whole family loves.</p>
+                <div class="hero-actions-btns">
+                    <a href="#shop" class="btn btn-primary">Explore Flavours</a>
+                    <a href="#combos" class="btn btn-outline">Buy Combo Packs</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================================================
+    TRUST SECTION
+    ================================================== -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag">Pure & Safe</span>
+                <h2 class="section-title">The Trust Behind Every Sip</h2>
+                <div class="section-bar"></div>
+            </div>
+            <div class="trust-grid">
+                <!-- Trust Card 1 -->
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--primary-green)" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>100% Natural Ingredients</h3>
+                </div>
+                <!-- Trust Card 2 -->
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--primary-orange)" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>No Preservatives</h3>
+                </div>
+                <!-- Trust Card 3 -->
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--primary-green)" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h3>Vitamin Rich</h3>
+                </div>
+                <!-- Trust Card 4 -->
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--primary-orange)" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Suitable For All Ages</h3>
+                </div>
+                <!-- Trust Card 5 -->
+                <div class="trust-card">
+                    <div class="trust-icon-box">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="var(--mango-yellow)" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 11l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Made In India</h3>
+                </div>
+            </div>
+
+                    </div>
+    </section>
+
+    <!-- ==================================================
+    SHOP PRODUCTS SECTION
+    ================================================== -->
+    <section class="shop-section" id="shop">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag">Explore The Taste</span>
+                <h2 class="section-title">Shop Now</h2>
+                <div class="section-bar"></div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs-wrapper">
+                <div class="filter-tabs" id="filterTabs">
+                    <button class="tab-btn active" data-filter="all">All Products</button>
+                    <button class="tab-btn" data-filter="Mango">Mango</button>
+                    <button class="tab-btn" data-filter="Orange">Orange</button>
+                    <button class="tab-btn" data-filter="Pineapple">Pineapple</button>
+                    <button class="tab-btn" data-filter="Lemon">Lemon</button>
+                    <button class="tab-btn" data-filter="Strawberry">Strawberry</button>
+                    <button class="tab-btn" data-filter="Mixed Fruit">Mixed Fruit</button>
+                    <button class="tab-btn" data-filter="Guava">Guava</button>
+                    <button class="tab-btn" data-filter="Lychee">Lychee</button>
+                    <button class="tab-btn" data-filter="Watermelon">Watermelon</button>
+                    <button class="tab-btn" data-filter="Kala Khatta">Kala Khatta</button>
+                    <button class="tab-btn" data-filter="Green Apple">Green Apple</button>
+                    <button class="tab-btn" data-filter="Mosambi">Mosambi</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Dynamically populated via JS, fallback for SEO included -->
+                <noscript>
+                    <div class="product-card">
+                        <div class="product-badge best-seller">Best Seller</div>
+                        <img src="assets/single.png" alt="Mango Flavour" class="prod-img">
+                        <h3>Mango Delight</h3>
+                        <p>Enjoy the rich, pulpy taste of natural Alphonso mangoes.</p>
+                        <div class="price-row">
+                            <span class="mrp">₹399</span>
+                            <span class="price">₹299</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                    </div>
+                </noscript>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================
+    COMBO OFFERS SECTION
+    ================================================== -->
+    <section class="combos-section" id="combos">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag">Value Bundles</span>
+                <h2 class="section-title">Combo Offers</h2>
+                <p class="section-desc">Save big with our curated combo packs designed to keep your family hydrated and
+                    healthy.</p>
+                <div class="section-bar"></div>
+            </div>
+
+            <div class="combos-grid">
+                <!-- Combo 1 -->
+                <div class="combo-card">
+                    <div class="combo-badge">Save ₹500</div>
+                    <div class="combo-image-box">
+                        <img src="assets/combo.png" alt="Family Combo Pack" class="combo-img">
+                    </div>
+                    <div class="combo-info">
+                        <span class="combo-tag">Best Value</span>
+                        <h3>Family Combo Pack</h3>
+                        <p class="combo-desc">A complete pack of 6 assorted family favorite flavours. Loaded with
+                            natural vitamins, perfect for parents and kids.</p>
+                        <ul class="combo-benefits">
+                            <li>✨ 6 Delicious Flavours Included</li>
+                            <li>🍊 Enriched with Vitamin C & D2</li>
+                            <li>🚚 Free Shipping Included</li>
+                        </ul>
+                        <div class="combo-price-row">
+                            <div class="price-stack">
+                                <span class="combo-mrp">MRP ₹1,499</span>
+                                <span class="combo-price">₹999</span>
+                            </div>
+                            <span class="combo-discount-percent">33% OFF</span>
+                        </div>
+                        <div class="combo-actions">
+                            <button class="btn btn-outline addComboToCart" data-name="Family Combo Pack"
+                                data-price="999">Add To Cart</button>
+                            <button class="btn btn-primary buyComboNow" data-name="Family Combo Pack"
+                                data-price="999">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combo 2 -->
+                <div class="combo-card">
+                    <div class="combo-badge">Save ₹300</div>
+                    <div class="combo-image-box">
+                        <img src="assets/combo.png" alt="Kids Combo Pack" class="combo-img">
+                    </div>
+                    <div class="combo-info">
+                        <span class="combo-tag">Kids Friendly</span>
+                        <h3>Kids Combo Pack</h3>
+                        <p class="combo-desc">A fun selection of Mango, Strawberry, and Watermelon. Healthier
+                            alternative to sugary sodas. No artificial colors.</p>
+                        <ul class="combo-benefits">
+                            <li>✨ 3 Fruity Kid-Favorite Flavours</li>
+                            <li>🦖 Low Sugar, Nutrient Dense</li>
+                            <li>🚚 Free Shipping Included</li>
+                        </ul>
+                        <div class="combo-price-row">
+                            <div class="price-stack">
+                                <span class="combo-mrp">MRP ₹899</span>
+                                <span class="combo-price">₹599</span>
+                            </div>
+                            <span class="combo-discount-percent">33% OFF</span>
+                        </div>
+                        <div class="combo-actions">
+                            <button class="btn btn-outline addComboToCart" data-name="Kids Combo Pack"
+                                data-price="599">Add To Cart</button>
+                            <button class="btn btn-primary buyComboNow" data-name="Kids Combo Pack" data-price="599">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combo 3 -->
+                <div class="combo-card">
+                    <div class="combo-badge">Save ₹400</div>
+                    <div class="combo-image-box">
+                        <img src="assets/combo.png" alt="Summer Combo Pack" class="combo-img">
+                    </div>
+                    <div class="combo-info">
+                        <span class="combo-tag">Summer Special</span>
+                        <h3>Summer Combo Pack</h3>
+                        <p class="combo-desc">Contains Lemon, Mosambi, and Watermelon packs. Highly rich in organic
+                            electrolytes to prevent heat strokes.</p>
+                        <ul class="combo-benefits">
+                            <li>✨ 3 Super-Hydration Flavours</li>
+                            <li>⚡ Packed with Natural Electrolytes</li>
+                            <li>🚚 Free Shipping Included</li>
+                        </ul>
+                        <div class="combo-price-row">
+                            <div class="price-stack">
+                                <span class="combo-mrp">MRP ₹999</span>
+                                <span class="combo-price">₹699</span>
+                            </div>
+                            <span class="combo-discount-percent">30% OFF</span>
+                        </div>
+                        <div class="combo-actions">
+                            <button class="btn btn-outline addComboToCart" data-name="Summer Combo Pack"
+                                data-price="699">Add To Cart</button>
+                            <button class="btn btn-primary buyComboNow" data-name="Summer Combo Pack"
+                                data-price="699">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combo 4 -->
+                <div class="combo-card">
+                    <div class="combo-badge">Save ₹1000</div>
+                    <div class="combo-image-box">
+                        <img src="assets/combo.png" alt="All Flavours Combo Pack" class="combo-img">
+                    </div>
+                    <div class="combo-info">
+                        <span class="combo-tag">Ultimate Pack</span>
+                        <h3>All Flavours Combo Pack</h3>
+                        <p class="combo-desc">Get the ultimate taste experience. 1 pack of each of our 12 delicious
+                            flavours. Perfect for daily variation.</p>
+                        <ul class="combo-benefits">
+                            <li>✨ All 12 Signature Flavours</li>
+                            <li>💪 Maximum Savings Pack</li>
+                            <li>🚚 Free Shipping Included</li>
+                        </ul>
+                        <div class="combo-price-row">
+                            <div class="price-stack">
+                                <span class="combo-mrp">MRP ₹2,999</span>
+                                <span class="combo-price">₹1,999</span>
+                            </div>
+                            <span class="combo-discount-percent">33% OFF</span>
+                        </div>
+                        <div class="combo-actions">
+                            <button class="btn btn-outline addComboToCart" data-name="All Flavours Combo Pack"
+                                data-price="1999">Add To Cart</button>
+                            <button class="btn btn-primary buyComboNow" data-name="All Flavours Combo Pack"
+                                data-price="1999">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================
+    CUSTOMER TESTIMONIALS
+    ================================================== -->
+    <section class="testimonials-section">
+        <div class="container">
+            
+            <div class="section-header-center">
+                <span class="section-tag">Loved By Thousands</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="section-bar"></div>
+            </div>
+
+            <div class="testimonials-slider-container">
+                <div class="testimonials-slider" id="testimonialSlider">
+                    <!-- Review 1 -->
+                    <div class="testimonial-card">
+                        <div class="user-meta">
+                            <div class="user-avatar" style="background-color: var(--primary-green);">A</div>
+                            <div>
+                                <span class="user-name">Amit Sharma</span>
+                                <span class="verified-badge">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg> Verified Purchase
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rating-stars">★★★★★</div>
+                        <p class="review-text">"My kids love the Mango and Strawberry flavours. It takes literally
+                            seconds to make, and I feel good knowing it has no chemical preservatives. Excellent
+                            alternative to cold drinks!"</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-card">
+                        <div class="user-meta">
+                            <div class="user-avatar" style="background-color: var(--primary-orange);">P</div>
+                            <div>
+                                <span class="user-name">Pooja Patel</span>
+                                <span class="verified-badge">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg> Verified Purchase
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rating-stars">★★★★★</div>
+                        <p class="review-text">"As a fitness enthusiast, staying hydrated is key. The Lemon and Mosambi
+                            flavours are incredibly refreshing. They taste extremely natural and clean."</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-card">
+                        <div class="user-meta">
+                            <div class="user-avatar" style="background-color: var(--mango-yellow);">R</div>
+                            <div>
+                                <span class="user-name">Rajesh Kumar</span>
+                                <span class="verified-badge">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg> Verified Purchase
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rating-stars">★★★★★</div>
+                        <p class="review-text">"My doctor recommended cutting out sodas, and NatureByte came to the
+                            rescue. Kala Khatta tastes just like childhood memory and is great for gut health too!"</p>
+                    </div>
+                </div>
+
+                <div class="slider-controls-testimonial">
+                    <button class="slider-arrow prev" id="testPrev" aria-label="Previous Testimonial">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-arrow next" id="testNext" aria-label="Next Testimonial">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Review Cards -->
+            <div class="video-reviews-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail"
+                        style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('assets/blog.png') center/cover;">
+                        <button class="play-btn" aria-label="Play Review Video">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                        <div class="video-info-overlay">
+                            <h4>"Perfect summer drink!"</h4>
+                            <span>Neha S. - Active Mom</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail"
+                        style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('assets/hero.png') center/cover;">
+                        <button class="play-btn" aria-label="Play Review Video">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                        <div class="video-info-overlay">
+                            <h4>"How I make it in 10s"</h4>
+                            <span>Karan J. - Gym Trainer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==================================================
+    CUSTOMER REVIEW REELS SLIDER
+    ================================================== -->
+    <section class="reels-section">
+        <div class="container">
+            <!-- Customer Review Reels Slider -->
+            <div class="reels-slider-wrapper">
+                <h3 class="reels-title">Real Reviews from Real Customers</h3>
+                <div class="reels-slider-container">
+                    <button class="reels-arrow prev" id="reelsPrev" aria-label="Previous Reels">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="reels-track" id="reelsTrack">
+                        <!-- Reel Card 1 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/6093409/river.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar"
+                                                style="background-color: var(--primary-green);">AR</span>
+                                            <div class="reel-meta">
+                                                <h4>Aarav R.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Absolutely loves the Mango Delight! Ready in seconds."
+                                        </p>
+                                        <span class="reel-tag">Mango Delight</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 2 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/cherry_blossoms.mp4" loop
+                                    muted autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar"
+                                                style="background-color: var(--primary-orange);">PS</span>
+                                            <div class="reel-meta">
+                                                <h4>Priya S.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Tangy Orange is my absolute favourite. Very
+                                            refreshing!"</p>
+                                        <span class="reel-tag">Tangy Orange</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 3 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/6093409/mountains.mp4" loop
+                                    muted autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar"
+                                                style="background-color: var(--mango-yellow); color: var(--text-dark);">KM</span>
+                                            <div class="reel-meta">
+                                                <h4>Kabir M.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"No preservatives makes this perfect for my kids daily
+                                            health."</p>
+                                        <span class="reel-tag">Mosambi Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 4 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/sunset.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #EC4899;">AK</span>
+                                            <div class="reel-meta">
+                                                <h4>Ananya K.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Strawberry Blast is so natural! Tastes like real fresh
+                                            fruit."</p>
+                                        <span class="reel-tag">Strawberry Blast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 5 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/clouds.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #8B5CF6;">RD</span>
+                                            <div class="reel-meta">
+                                                <h4>Rohan D.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Tried Kala Khatta combo, family loved it during summer
+                                            days."</p>
+                                        <span class="reel-tag">Kala Khatta</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 6 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/6093409/river.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #06B6D4;">DV</span>
+                                            <div class="reel-meta">
+                                                <h4>Diya V.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Super easy to carry. Just add water and instant juice
+                                            is ready."</p>
+                                        <span class="reel-tag">Pineapple Pack</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 7 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/cherry_blossoms.mp4" loop
+                                    muted autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #EF4444;">AP</span>
+                                            <div class="reel-meta">
+                                                <h4>Arjun P.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Rich in Vitamin C, healthy and perfect for my
+                                            post-workout drink."</p>
+                                        <span class="reel-tag">Lemon Mint</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 8 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/6093409/mountains.mp4" loop
+                                    muted autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #10B981;">NG</span>
+                                            <div class="reel-meta">
+                                                <h4>Neha G.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Watermelon pack is very hydrating. Zero artificial
+                                            colours!"</p>
+                                        <span class="reel-tag">Watermelon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 9 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/sunset.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #F59E0B;">DJ</span>
+                                            <div class="reel-meta">
+                                                <h4>Devansh J.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Love the quality! Ready in 10 seconds, zero hassle."
+                                        </p>
+                                        <span class="reel-tag">Litchi Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 10 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/32795/clouds.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #6366F1;">MN</span>
+                                            <div class="reel-meta">
+                                                <h4>Meera N.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"My kids love it, and I am satisfied knowing it has no
+                                            chemicals."</p>
+                                        <span class="reel-tag">Apple Delight</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 11 -->
+                        <div class="reel-card">
+                            <div class="reel-video-container">
+                                <video class="reel-video" src="https://assets.codepen.io/6093409/river.mp4" loop muted
+                                    autoplay playsinline></video>
+                                <div class="reel-overlay">
+                                    <div class="reel-play-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div class="reel-info">
+                                        <div class="reel-customer">
+                                            <span class="reel-avatar" style="background-color: #3B82F6;">VT</span>
+                                            <div class="reel-meta">
+                                                <h4>Vikram T.</h4>
+                                                <span class="reel-stars">⭐⭐⭐⭐⭐</span>
+                                            </div>
+                                        </div>
+                                        <p class="reel-feedback">"Perfect replacement for sugary soda drinks. Value for
+                                            money!"</p>
+                                        <span class="reel-tag">Pomegranate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="reels-arrow next" id="reelsNext" aria-label="Next Reels">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                            fill="none">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================================================
+    BECOME PARTNER SECTION
+    ================================================== -->
+    <section class="partner-section" id="partner">
+        <div class="container">
+            <div class="partner-box">
+                <div class="partner-content">
+                    <span class="section-tag-light">B2B Opportunities</span>
+                    <h2>Become A NatureByte Partner</h2>
+                    <p class="partner-sub">Join India's fastest-growing healthy beverage brand. Expand your distribution
+                        grid and increase your profitability today.</p>
+
+                    <div class="partner-benefits-grid">
+                        <div class="p-benefit">
+                            <span class="p-icon">💰</span>
+                            <div>
+                                <h4>High Profit Margins</h4>
+                                <p>Unbeatable wholesale prices to optimize your distribution earnings.</p>
+                            </div>
+                        </div>
+                        <div class="p-benefit">
+                            <span class="p-icon">📢</span>
+                            <div>
+                                <h4>Marketing Support</h4>
+                                <p>Free banners, brochures, standees, and localized digital ad targeting.</p>
+                            </div>
+                        </div>
+                        <div class="p-benefit">
+                            <span class="p-icon">⚡</span>
+                            <div>
+                                <h4>Fast Supply</h4>
+                                <p>Continuous supply line with automated re-orders and express logistics.</p>
+                            </div>
+                        </div>
+                        <div class="p-benefit">
+                            <span class="p-icon">📈</span>
+                            <div>
+                                <h4>Growing Brand</h4>
+                                <p>Highly visible brand backed by strong consumer repeat demand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="partner-form-card">
+                    <h3>Distribution Query</h3>
+                    <p>Enter your details and our franchise director will call you back within 12 hours.</p>
+                    <form id="partnerForm" novalidate>
+                        <div class="form-group">
+                            <label for="partnerName">Full Name</label>
+                            <input type="text" id="partnerName" placeholder="Enter your full name" required>
+                            <span class="error-msg" id="nameError">Name is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="partnerMobile">Mobile Number</label>
+                            <input type="tel" id="partnerMobile" placeholder="Enter 10-digit mobile number" required>
+                            <span class="error-msg" id="mobileError">Enter a valid 10-digit mobile number.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="partnerCity">City</label>
+                            <input type="text" id="partnerCity" placeholder="Enter your city" required>
+                            <span class="error-msg" id="cityError">City is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="partnerType">Business Type</label>
+                            <select id="partnerType" required>
+                                <option value="" disabled selected>Select Business Type</option>
+                                <option value="Distributor">Distributor</option>
+                                <option value="Super Stockist">Super Stockist</option>
+                                <option value="Wholesaler">Wholesaler</option>
+                                <option value="Retailer">Retailer / Supermarket</option>
+                            </select>
+                            <span class="error-msg" id="typeError">Please select a business type.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="partnerSubmitBtn">Submit
+                            Query</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Success Modal -->
+    <div class="modal-overlay" id="partnerModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <div class="modal-icon">✔️</div>
+            <h3>Thank You!</h3>
+            <p>Your business query has been recorded. Our team will contact you shortly on the provided mobile number.
+            </p>
+            <button class="btn btn-primary" id="modalOkBtn">Done</button>
+        </div>
+    </div>
+
+    <!-- ==================================================
+    NEWSLETTER SECTION
+    ================================================== -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2>Get Exclusive Offers And Health Tips</h2>
+            <p>Subscribe to our newsletter to receive recipes, new flavor announcements, and members-only coupons.</p>
+            <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); handleNewsletter();">
+                <input type="email" placeholder="Enter your email address" id="newsletterEmail" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================================================
+    FOOTER
+    ================================================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            
+            <div class="footer-content-centered">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"
+                            fill="var(--primary-green)" />
+                        <path
+                            d="M12 3C7.03 3 3 7.03 3 12C3 13.92 3.6 15.7 4.63 17.17L17.17 4.63C15.7 3.6 13.92 3 12 3ZM19.37 6.83L6.83 19.37C8.3 20.4 10.08 21 12 21C16.97 21 21 16.97 21 12C21 10.08 20.4 8.3 19.37 6.83Z"
+                            fill="var(--primary-orange)" />
+                    </svg>
+                    <span class="logo-text text-white">Nature<span class="logo-highlight">Byte</span></span>
+                </a>
+                <p class="footer-desc">NatureByte is India's premium healthy instant fruit juice powder brand, delivering 100% natural, preservative-free hydration loaded with essential vitamins. We are committed to making wholesome nutrition simple, delicious, and accessible for everyone. Just add water and experience the pure goodness of real fruits anywhere, anytime.</p>
+                <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 NatureByte Inc. All rights reserved. Made in India with ❤️.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js?v=1.6"></script>
+</body>
+
+</html>
