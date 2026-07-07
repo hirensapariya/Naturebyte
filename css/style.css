@@ -322,13 +322,24 @@ textarea {
     letter-spacing: -0.5px;
 }
 
-.logo-icon {
-    width: 32px;
-    height: 32px;
+.logo-img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: var(--transition-fast);
 }
 
-.logo-highlight {
-    color: var(--primary-orange);
+.logo-img-dark {
+    display: none;
+}
+
+[data-theme="dark"] .logo-img-light {
+    display: none;
+}
+
+[data-theme="dark"] .logo-img-dark {
+    display: block;
 }
 
 /* Nav Menu */
@@ -1821,6 +1832,10 @@ textarea {
         order: 2;
     }
 
+    .logo-img {
+        height: 32px;
+    }
+
     .header-actions {
         order: 3;
         gap: 8px;
@@ -2296,6 +2311,10 @@ textarea {
 .footer-content-centered .logo {
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.footer-content-centered .logo-img {
+    height: 48px;
 }
 
 .footer-content-centered .footer-desc {
