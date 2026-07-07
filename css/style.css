@@ -1878,15 +1878,15 @@ textarea {
         height: auto !important;
         min-height: auto !important;
         max-height: none !important;
-        padding: 60px 0 !important;
+        padding: 50px 0 !important;
         overflow: visible !important;
-        background: linear-gradient(to bottom, rgba(250, 249, 245, 0.92) 0%, rgba(250, 249, 245, 0.88) 100%), 
+        background: linear-gradient(to bottom, rgba(250, 249, 245, 0.93) 0%, rgba(250, 249, 245, 0.88) 100%), 
                     url('../assets/juice_background.png') no-repeat center center !important;
         background-size: cover !important;
     }
 
     [data-theme="dark"] .hero-banner-section {
-        background: linear-gradient(to bottom, rgba(11, 15, 25, 0.94) 0%, rgba(11, 15, 25, 0.9) 100%), 
+        background: linear-gradient(to bottom, rgba(11, 15, 25, 0.95) 0%, rgba(11, 15, 25, 0.9) 100%), 
                     url('../assets/juice_background.png') no-repeat center center !important;
         background-size: cover !important;
     }
@@ -1894,17 +1894,37 @@ textarea {
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 30px;
+        gap: 20px;
     }
 
-    .hero-subtitle {
+    .hero-banner-section .hero-title {
+        font-size: 2.4rem !important;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero-banner-section .hero-subtitle {
+        font-size: 0.98rem !important;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 25px;
+        max-width: 480px;
+    }
+
+    .hero-banner-section .offer-tag {
+        font-size: 0.8rem !important;
+        padding: 5px 12px;
+        margin-bottom: 15px;
     }
 
     .hero-actions-btns {
         justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-actions-btns .btn {
+        padding: 10px 22px !important;
+        font-size: 0.88rem !important;
     }
 
     /* Trust Grid Mobile */
@@ -2030,6 +2050,19 @@ textarea {
     .filter-tabs {
         gap: 8px;
     }
+
+    .hero-actions-btns {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        gap: 10px !important;
+    }
+
+    .hero-actions-btns .btn {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2037,8 +2070,8 @@ textarea {
         grid-template-columns: 1fr;
     }
 
-    .hero-title {
-        font-size: 2.3rem;
+    .hero-banner-section .hero-title {
+        font-size: 1.95rem !important;
     }
 
     .partner-form-card {
