@@ -431,6 +431,18 @@ textarea {
     color: var(--text-dark);
 }
 
+.mobile-toggle .icon-close {
+    display: none;
+}
+
+.mobile-toggle.active .icon-burger {
+    display: none;
+}
+
+.mobile-toggle.active .icon-close {
+    display: block;
+}
+
 /* ==========================================================================
    SEARCH OVERLAY
    ========================================================================== */
