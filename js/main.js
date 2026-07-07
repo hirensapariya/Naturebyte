@@ -223,20 +223,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Setup Wishlist mock clicks
     setupWishlistClicks();
 
-    // Setup combo pack add-to-carts
-    setupComboClicks();
-
     // Setup Theme Toggle switcher
     setupThemeToggle();
-
-    // Hero buttons cart listeners
-    document.querySelectorAll(".addToCartHero").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const name = e.target.getAttribute("data-name") || "NatureByte Juice Powder";
-            updateCart(1);
-            showToast(`🎉 Added ${name} to your Cart!`);
-        });
-    });
 });
 
 // ==========================================================================
@@ -290,8 +278,8 @@ function renderProducts(filterCategory) {
                 <button class="qty-btn plus" data-id="${p.id}">+</button>
             </div>
             <div class="product-actions">
-                <button class="btn btn-outline add-to-cart-btn" data-id="${p.id}">Add to Cart</button>
-                <button class="btn btn-primary buy-now-btn" data-id="${p.id}">Buy Now</button>
+                <a href="tel:+918200228239" class="btn btn-outline">📞 Call</a>
+                <button class="btn btn-primary product-wa-btn" data-id="${p.id}">💬 WhatsApp</button>
             </div>
         `;
         grid.appendChild(card);
@@ -322,28 +310,15 @@ function setupGridEvents() {
         });
     });
 
-    // Add to Cart Buttons
-    document.querySelectorAll(".add-to-cart-btn").forEach(btn => {
+    // WhatsApp Buttons
+    document.querySelectorAll(".product-wa-btn").forEach(btn => {
         btn.addEventListener("click", (e) => {
-            const id = parseInt(e.target.getAttribute("data-id"));
+            const id = parseInt(btn.getAttribute("data-id"));
             const prod = products.find(p => p.id === id);
-            const qty = selectedQuantities[id];
-            updateCart(qty);
-            showToast(`🛒 Added ${qty}x ${prod.name} to Cart!`);
-        });
-    });
-
-    // Buy Now Buttons
-    document.querySelectorAll(".buy-now-btn").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const id = parseInt(e.target.getAttribute("data-id"));
-            const prod = products.find(p => p.id === id);
-            const qty = selectedQuantities[id];
-            updateCart(qty);
-            showToast(`⚡ Proceeding to checkout with ${qty}x ${prod.name}!`);
-            setTimeout(() => {
-                alert(`Redirecting you to secure payment page for ${qty}x ${prod.name} totaling ₹${prod.price * qty}!`);
-            }, 500);
+            const qty = selectedQuantities[id] || 1;
+            const message = `Hi NatureByte, I'm interested in ordering ${qty}x ${prod.name} (price: ₹${prod.price} each).`;
+            const waUrl = `https://wa.me/918200228239?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, "_blank");
         });
     });
 }
@@ -580,32 +555,7 @@ function setupWishlistClicks() {
     }
 }
 
-// ==========================================================================
-// COMBO ACTIONS
-// ==========================================================================
-function setupComboClicks() {
-    // Add to Cart
-    document.querySelectorAll(".addComboToCart").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const name = e.target.getAttribute("data-name");
-            updateCart(1);
-            showToast(`🎁 Combo: ${name} added to Cart!`);
-        });
-    });
 
-    // Buy Now
-    document.querySelectorAll(".buyComboNow").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const name = e.target.getAttribute("data-name");
-            const price = e.target.getAttribute("data-price");
-            updateCart(1);
-            showToast(`⚡ Processing order for ${name}!`);
-            setTimeout(() => {
-                alert(`Redirecting to secure checkout for ${name} (Offer Price: ₹${price}). Free shipping applied!`);
-            }, 500);
-        });
-    });
-}
 
 // ==========================================================================
 // B2B FRANCHISE FORM VALIDATION

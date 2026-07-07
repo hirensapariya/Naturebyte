@@ -1818,7 +1818,8 @@ textarea {
         height: 60px;
     }
 
-    .header-cta {
+    .header-cta-call,
+    .header-cta-wa {
         display: none !important;
     }
 
